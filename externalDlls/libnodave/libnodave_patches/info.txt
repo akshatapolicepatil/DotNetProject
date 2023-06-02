@@ -1,0 +1,45 @@
+In this director are only the files I changed from the original libnodave!
+
+0.8.4.6.10
+  - PLCSIM Connection now works with libnodave
+
+0.8.4.6.9
+  - Fixes (now it compiles again with the IOS SDK)
+
+0.8.4.6.8
+  - Now the Base is libnodave 0.8.4.6
+
+0.8.4.5.8
+  - ExtendedConnection can now also specify the Connection Type (and also for routing!)
+
+0.8.4.5.7
+  - Changed the DLL so, that Rack/Slot Parameters are also used with S7Online, Netlink, IBHlink
+
+0.8.4.5.6
+  - Changed the UseResult Funtion, so that it supports a own Byte Array
+
+0.8.4.5.5
+  - Timeout in TCP Connections was fix 1,5s wich was too short for some tasks.
+    Now, Stanadrt Timeout is 2.5s for every Connection, but can be changed via settimeout
+
+0.8.4.5.4
+  - Stop bits in LibNoDave serial Changed to 1
+
+0.8.4.5.3
+  - Multiple read returns 0x00 even if the first result does not exist!
+
+0.8.4.5.2
+  - Routing Bugfixes (Subnet Lowbyte/Highbyte switched!)
+
+0.8.4.5.1 and earlyer
+  - Routing
+  - Extened Connection
+
+Changes to the original Version:
+ - Routing on most Adapters
+ - a Bug in TCP Connection is fixed
+ - Deletion of PLC Blocks
+ - Upload of PLC Blocks to the PLC (not yet tested)
+
+Based on libnodave 0.8.4.5
+

@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup><GenerateErrorForMissingTargetingPacks>false</GenerateErrorForMissingTargetingPacks></PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net462</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="AvalonEdit\AWL_Step5_Highlighting.xshd" />
+    <None Remove="AvalonEdit\AWL_Step7_Highlighting.xshd" />
+    <None Remove="Images\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AvalonEdit\AWL_Step5_Highlighting.xshd" />
+    <EmbeddedResource Include="AvalonEdit\AWL_Step7_Highlighting.xshd" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AvalonEdit" Version="6.1.3.50" />
+    <PackageReference Include="DotNetProjects.DataVisualization.Toolkit" Version="6.0.68" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibNoDaveConnectionLibrary.WinForms\DotNetSiemensPLCToolBoxLibrary.WinForms.csproj" />
+    <ProjectReference Include="..\LibNoDaveConnectionLibrary\DotNetSiemensPLCToolBoxLibrary.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock">
+      <HintPath>..\externalDlls\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="AvalonDock.Themes">
+      <HintPath>..\externalDlls\AvalonDock.Themes.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.HMIGENOBJECTSLib">
+      <HintPath>..\externalDlls\Interop.HMIGENOBJECTSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="JFKCommonLibrary">
+      <HintPath>..\externalDlls\JFKCommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1.png" />
+  </ItemGroup>
+</Project>

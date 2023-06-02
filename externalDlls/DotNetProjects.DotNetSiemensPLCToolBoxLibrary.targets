@@ -1,0 +1,28 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)DotNetSiemensPLCToolBoxLibrary.TIAV13.dll">
+      <Link>DotNetSiemensPLCToolBoxLibrary.TIAV13.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Include="$(MSBuildThisFileDirectory)DotNetSiemensPLCToolBoxLibrary.TIAV13.pdb">
+      <Link>DotNetSiemensPLCToolBoxLibrary.TIAV13.pdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Include="$(MSBuildThisFileDirectory)DotNetSiemensPLCToolBoxLibrary.TIAV14SP1.dll">
+      <Link>DotNetSiemensPLCToolBoxLibrary.TIAV14SP1.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Include="$(MSBuildThisFileDirectory)DotNetSiemensPLCToolBoxLibrary.TIAV14SP1.pdb">
+      <Link>DotNetSiemensPLCToolBoxLibrary.TIAV14SP1.pdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Include="$(MSBuildThisFileDirectory)libnodave_jfkmod.dll">
+      <Link>libnodave_jfkmod.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Include="$(MSBuildThisFileDirectory)libnodave_jfkmod64.dll">
+      <Link>libnodave_jfkmod64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
